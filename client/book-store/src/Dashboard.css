@@ -1,0 +1,213 @@
+/* Apply the background image to the entire body or dashboard container */
+body {
+  background-image: url('../public/bookbackground.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire page without distortion */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the background covers the full viewport height */
+  margin: 0; /* Removes default margin for full coverage */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent dark background for navbar */
+  color: white;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10; /* Ensures the navbar stays on top */
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+/* Logout Button in Navbar */
+.logout-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #333;
+}
+
+/* Dashboard Actions */
+.dashboard-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin-top: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Input and Button Styling */
+.search-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  width: 300px !important; /* Force the width */
+}
+
+.search-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+/* Form Container */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for form container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: -5px 20px 0 20px;
+  max-width: 600px;
+  z-index: 5;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -90px;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #555;
+}
+
+/* Style for the dropdown in form */
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.form-container{
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  display: flex;
+  justify-content: space-between; /* Space out the form and table equally */
+  gap: 20px; /* Add some space between the containers */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Center the entire content */
+}
+
+/* Center Titles */
+.form-container h2{
+  text-align: center;
+  color: #333;
+}
