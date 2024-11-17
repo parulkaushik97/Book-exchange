@@ -30,7 +30,7 @@ const EditBook = () => {
         title,
         author,
         genre,
-        bookcondition: condition,
+        condition: condition,
         availability,
       }, {
         headers: { Authorization: `Bearer ${token}` },
